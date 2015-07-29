@@ -7,38 +7,34 @@ Originaly created as a utility for [angular-meteor](https://github.com/DAB0mB/an
 
 ```js
 var src = {
-  outerFoo: {
-    innerFoo: 'foo'
+  obj: {
+    prop: 'value'
   },
 
-  bar: ['foo', 'bar', 'baz']
+  arr: [1, 2, 3]
 };
 
 var dst = {
-  outerFoo: {
-    innerFoo: 'baz'
+  obj: {
+    prop: 'changedValue'
   },
 
-  bar: ['foo', 'bar']
+  arr: [1, 2]
 };
 
-var updates = getUpdates(src, dst);
+expect(getUpdates(src, dst)).to.deep.equal({
+  $set: {
+    'obj.prop': 'newValue'
+  },
 
-/*
- {
-   $set: {
-     'outerFoo.innerFoo': 'baz'
-   },
+  $unset: {
+    'arr.2': undefined
+  },
 
-   $unset: {
-     'bar.2': undefined
-   },
-
-   $pull: {
-     'bar': null
-   },
- }
- */
+  $pull: {
+    'arr': null
+  },
+});
 ```
 
 ## Download
