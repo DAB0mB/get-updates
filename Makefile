@@ -1,4 +1,4 @@
 test:
-	mocha "test" --timeout 2000 --reporter nyan
+	mocha "test" --timeout 2000
 
 .PHONY: test
