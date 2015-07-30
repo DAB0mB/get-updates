@@ -3,6 +3,13 @@
 Deep compares two documents and creates a Mongo updates object, useful when wanting to sync between client and server.
 Originaly created as a utility for [angular-meteor](https://github.com/DAB0mB/angular-meteor.git).
 
+## Usage
+
+This module exports a function which gets the following parameters:
+- `src` - A source object to compare with.
+- `dst` - A destination object to compare to.
+- `isShallow` - Represents the deepness level of the comparison, by default, will do a deep comparison. Can either be a truthy value or a number bigger than 1. If truthy, will perform a shallow comparison. If a number bigger than 1, will perform a limited comparison as specified.
+
 ## Example
 
 ```js
