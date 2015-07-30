@@ -1,7 +1,7 @@
 {
   "name": "get-updates",
   "description": "A utility for getting mongo updates",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "lib/get-updates.js",
   "repository": {
     "type": "git",
