@@ -7,10 +7,20 @@
     "type": "git",
     "url": "https://DAB0mB@github.com/DAB0mB/get-updates.git"
   },
+  "browserify": {
+    "transform": [
+      "browserify-shim" 
+    ]
+  },
+  "browserify-shim": {
+    "underscore": "global:_"
+  },
   "dependencies": {
     "underscore": "^1.0.0"
   },
   "devDependencies": {
+    "browserify": "~9.0.0",
+    "browserify-shim": "~3.8.0",
     "chai": "~2.1.0",
     "mocha": "~2.1.0"
   },
