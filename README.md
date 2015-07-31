@@ -46,6 +46,7 @@ expect(getUpdates(src, dst)).to.deep.equal({
 
 ## Download
 The source is available for download from [GitHub](http://github.com/DAB0mB/get-updates).
-Alternatively, you can install using Node Package Manager (`npm`):
+Alternatively, you can install using:
 
-    npm install mongodb-get-updates
+- `npm install mongodb-get-updates`
+- `meteor add dab0mb:get-updates`
