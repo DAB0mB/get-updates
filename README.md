@@ -1,7 +1,7 @@
 # Get Updates
 
 Deep compares two documents and creates a Mongo updates object, useful when wanting to sync between client and server.
-Originaly created as a utility for [angular-meteor](https://github.com/DAB0mB/angular-meteor.git).
+Originaly created as a utility for [angular-meteor](https://github.com/Urigo/angular-meteor.git).
 
 ## Usage
 
@@ -31,7 +31,7 @@ var dst = {
 
 expect(getUpdates(src, dst)).to.deep.equal({
   $set: {
-    'obj.prop': 'newValue'
+    'obj.prop': 'changedValue'
   },
 
   $unset: {
