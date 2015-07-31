@@ -1,7 +1,7 @@
 Package.describe({
   name: "dab0mb:get-updates",
   summary: "A utility for getting mongo updates",
-  version: "1.0.4",
+  version: "1.0.3",
   git: "https://github.com/DAB0mB/get-updates.git"
 });
 
